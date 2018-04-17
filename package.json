@@ -1,6 +1,6 @@
 {
   "name": "dotfind",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This package is used for searching through javascript objects. Providing a dot notaton of the falttened path and returned is the items within the depths of the object",
   "main": "index.js",
   "scripts": {
