@@ -54,4 +54,22 @@ describe("Tests", function() {
         };
         assert.equal(dotfind("a.b", obj), 5);
     });
+
+    it("should return undefined if the object is a string", function () {
+        const obj = "hello";
+
+        assert.equal(dotfind("a", obj), undefined);
+    });
+
+    it("should return undefined if the object is a number", function () {
+        const obj = 4;
+
+        assert.equal(dotfind("a", obj), undefined);
+    });
+
+    it("should return undefined if the object is null", function () {
+        const obj = null;
+
+        assert.equal(dotfind("a", obj), undefined);
+    });
 });

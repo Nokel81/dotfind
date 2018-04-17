@@ -5,7 +5,7 @@ module.exports = function dotfind(path, object) {
         return object;
     }
 
-    if (!object) {
+    if (!object || typeof object !== "object") {
         return undefined;
     }
 
